@@ -4,12 +4,13 @@ While Boulder attempts to implement the ACME specification as strictly as possib
 
 Since Boulder evolved alongside the ACME specification there is not one exact ACME draft number that can be referenced in isolation to understand the protocol Boulder speaks. This document exists to detail differences between what Boulder does and the most-recently published ACME draft. Since ACME is not yet finalized it will be updated as new numbered drafts are published.
 
-**ACME v2 divergences from [`draft-ietf-acme-acme-12`](https://tools.ietf.org/html/draft-ietf-acme-acme-12).**
+**ACME v2 divergences from [`draft-ietf-acme-acme-13`](https://tools.ietf.org/html/draft-ietf-acme-acme-13).**
 
 Presently the following protocol features are not implemented:
 
 - Pre-authorization. This is an optional feature and we have no plans to implement it. V2 clients should use order based issuance without pre-authorization.
 - The `orders` field on account objects. We intend to support this non-essential feature in the near future. Please follow Boulder Issue [#3335](https://github.com/letsencrypt/boulder/issues/3335).
+- keyrollover [#3813](https://github.com/letsencrypt/boulder/issues/3813)
 
 **ACME v1 divergences from [`draft-ietf-acme-acme-07`](https://tools.ietf.org/html/draft-ietf-acme-acme-07).**
 
